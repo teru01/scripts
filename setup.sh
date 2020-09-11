@@ -14,3 +14,5 @@ sudo nginx -p $dir -c nginx.conf
 sudo cp -a mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
 sudo rm /var/log/mysql/mysql-error.log /var/log/mysql/mysql-slow.log
 sudo systemctl restart mysql
+
+echo $dir
