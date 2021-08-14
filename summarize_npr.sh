@@ -14,5 +14,8 @@ cat $dir/access.log | kataribe > $dir/result.txt
 sudo chown -R $USER:$GROUPS $dir
 pt-query-digest $dir/mysql-slow.log > $dir/digest.txt
 
+export TOKEN="$TOKEN"
+export logChannelID="$CHANNEL_ID"
+
 log2discord $dir/result.txt
 log2discord $dir/digest.txt
