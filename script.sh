@@ -33,3 +33,6 @@ chmod +x setup_npr.sh
 chmod +x summarize_npr.sh
 
 $(go env GOPATH)/bin/kataribe -generate
+
+sudo systemctl stop apparmor
+sudo systemctl disable apparmor
