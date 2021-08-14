@@ -10,6 +10,8 @@ sudo apt update
 sudo apt install -y nginx dstat percona-toolkit sysstat curl git build-essential tree net-tools vim unzip
 go get -u github.com/matsuu/kataribe
 go get -u github.com/google/pprof
+go get -u github.com/teru01/log2discord
+
 
 cd $PROJ_DIR
 
