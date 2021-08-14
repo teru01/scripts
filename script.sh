@@ -36,3 +36,6 @@ $(go env GOPATH)/bin/kataribe -generate
 
 sudo systemctl stop apparmor
 sudo systemctl disable apparmor
+
+sudo systemctl stop ufw
+sudo systemctl disable ufw
