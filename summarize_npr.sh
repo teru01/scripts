@@ -13,3 +13,6 @@ cat $dir/access.log | kataribe > $dir/result.txt
 # パーミッションまわり調整
 sudo chown -R $USER:$GROUPS $dir
 pt-query-digest $dir/mysql-slow.log > $dir/digest.txt
+
+log2discord $dir/result.txt
+log2discord $dir/digest.txt
