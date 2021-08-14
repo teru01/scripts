@@ -10,7 +10,10 @@ sudo apt update
 sudo apt install -y nginx dstat percona-toolkit sysstat curl git build-essential tree net-tools vim unzip
 go get -u github.com/matsuu/kataribe
 go get -u github.com/google/pprof
-go get -u github.com/teru01/log2discord
+
+curl -LO https://github.com/teru01/log2discord/releases/download/1.0/log2discord
+chmod +x log2discord
+sudo mv log2discord /bin
 
 
 cd $PROJ_DIR
