@@ -39,3 +39,16 @@ sudo systemctl disable apparmor
 
 sudo systemctl stop ufw
 sudo systemctl disable ufw
+
+cat <<EOF > ~/.tmux.conf
+set -g mouse on
+unbind C-b
+set -g prefix C-g
+bind C-b send-prefix
+
+# scroll buffer
+set -g history-limit 65535
+
+EOF
+
+tmux source-file ~/.tmux.conf
